@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36623.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlDeInventario.Module", "ControlDeInventario.Module\ControlDeInventario.Module.csproj", "{849B3FBC-349A-A3BE-1CCB-5BE1ECEFBD59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlDeInventario.Win", "ControlDeInventario.Win\ControlDeInventario.Win.csproj", "{8F908530-E50B-643A-EE97-EF07709E4A90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlDeInventario.Blazor.Server", "ControlDeInventario.Blazor.Server\ControlDeInventario.Blazor.Server.csproj", "{606F4DE2-2B51-B909-3A07-0DFD47217B2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		EasyTest|Any CPU = EasyTest|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{849B3FBC-349A-A3BE-1CCB-5BE1ECEFBD59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{849B3FBC-349A-A3BE-1CCB-5BE1ECEFBD59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{849B3FBC-349A-A3BE-1CCB-5BE1ECEFBD59}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{849B3FBC-349A-A3BE-1CCB-5BE1ECEFBD59}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{849B3FBC-349A-A3BE-1CCB-5BE1ECEFBD59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{849B3FBC-349A-A3BE-1CCB-5BE1ECEFBD59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F908530-E50B-643A-EE97-EF07709E4A90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F908530-E50B-643A-EE97-EF07709E4A90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F908530-E50B-643A-EE97-EF07709E4A90}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{8F908530-E50B-643A-EE97-EF07709E4A90}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{8F908530-E50B-643A-EE97-EF07709E4A90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F908530-E50B-643A-EE97-EF07709E4A90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{606F4DE2-2B51-B909-3A07-0DFD47217B2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606F4DE2-2B51-B909-3A07-0DFD47217B2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606F4DE2-2B51-B909-3A07-0DFD47217B2F}.EasyTest|Any CPU.ActiveCfg = EasyTest|Any CPU
+		{606F4DE2-2B51-B909-3A07-0DFD47217B2F}.EasyTest|Any CPU.Build.0 = EasyTest|Any CPU
+		{606F4DE2-2B51-B909-3A07-0DFD47217B2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606F4DE2-2B51-B909-3A07-0DFD47217B2F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2800AB8-7ED6-4C22-AF9C-DD46F422EB2C}
+	EndGlobalSection
+EndGlobal
