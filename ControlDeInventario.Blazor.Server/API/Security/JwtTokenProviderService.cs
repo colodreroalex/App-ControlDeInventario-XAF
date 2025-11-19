@@ -12,14 +12,17 @@ namespace ControlDeInventario.WebApi.JWT;
 public class JwtTokenProviderService : IAuthenticationTokenProvider {
     readonly SignInManager signInManager;
     readonly IConfiguration configuration;
+    readonly SymmetricSecurityKey issuerSigningKey;
+    
     public JwtTokenProviderService(SignInManager signInManager, IConfiguration configuration) {
         this.signInManager = signInManager;
         this.configuration = configuration;
+        // Cache the signing key to avoid repeated encoding on every authentication
+        this.issuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Authentication:Jwt:IssuerSigningKey"]));
     }
     public string Authenticate(object logonParameters) {
         var result = signInManager.AuthenticateByLogonParameters(logonParameters);
         if(result.Succeeded) {
-            var issuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Authentication:Jwt:IssuerSigningKey"]));
             var token = new JwtSecurityToken(
                 //issuer: configuration["Authentication:Jwt:Issuer"],
                 //audience: configuration["Authentication:Jwt:Audience"],

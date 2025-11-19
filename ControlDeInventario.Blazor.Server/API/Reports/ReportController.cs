@@ -31,7 +31,7 @@ public class ReportController : ControllerBase {
         }
     }
     private SortProperty[]? LoadSortPropertiesFromQuery() {
-        if(Request.Query.Keys.Contains("sortProperty")) {
+        if(Request.Query.ContainsKey("sortProperty")) {
             var queryParam = Request.Query["sortProperty"];
             SortProperty[] result = new SortProperty[queryParam.Count];
             for(int i = 0; i < queryParam.Count; i++) {
