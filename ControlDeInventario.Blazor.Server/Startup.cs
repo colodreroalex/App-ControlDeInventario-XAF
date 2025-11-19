@@ -115,7 +115,7 @@ public class Startup {
                         // In this case, permission requests are loaded and cached when secured data is accessed for the first time
                         // and used until the current user logs out. 
                         // See the following article for more details: https://docs.devexpress.com/eXpressAppFramework/DevExpress.ExpressApp.Security.SecurityStrategy.PermissionsReloadMode.
-                        ((SecurityStrategy)securityStrategy).PermissionsReloadMode = PermissionsReloadMode.NoCache;
+                        ((SecurityStrategy)securityStrategy).PermissionsReloadMode = PermissionsReloadMode.CacheOnFirstAccess;
                     };
                 })
                 .AddPasswordAuthentication(options => {
